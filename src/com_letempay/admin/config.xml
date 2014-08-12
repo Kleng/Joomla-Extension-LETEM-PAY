@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+
+    <fieldset name="basic">
+
+        <field name="API_Environment"
+               type="list"
+               default="sandbox"
+               label="COM_LETEMPAY_CONFIG_PAYPAL_API_ENVIROMENT_LABEL"
+        >
+            <option value="sandbox">COM_LETEMPAY_CONFIG_OPTION_SANDBOX_LABEL</option>
+            <option value="live">COM_LETEMPAY_CONFIG_OPTION_LIVE_LABEL</option>
+        </field>
+        
+        <field name="notification_email"
+               type="email"
+               label="COM_LETEMPAY_CONFIG_NOTIFICATION_EMAIL_LABEL"
+               description="COM_LETEMPAY_CONFIG_NOTIFICATION_EMAIL_DESC"
+               validate="email" />
+
+        <field name="default_tcfile"
+               type="filelist"
+               label="COM_LETEMPAY_CONFIG_TERM_CONDITIONS_DEFAULT_FILE_LABEL"
+               description="COM_LETEMPAY_CONFIG_TERM_CONDITIONS_DEFAULT_FILE_DESC"
+               directory="images"
+               filter="(^.*\.pdf)" hide_default="1" />
+    </fieldset>
+
+    <fieldset name="paypal_sandbox">
+
+        <field name="Sandbox_API_UserName"
+               type="text"
+               label="COM_LETEMPAY_CONFIG_PAYPAL_API_USERNAME_LABEL"
+        />
+
+        <field name="Sandbox_API_Password"
+               type="text"
+               label="COM_LETEMPAY_CONFIG_PAYPAL_API_PASSWORD_LABEL"
+        />
+
+        <field name="Sandbox_API_Signature"
+               type="text"
+               label="COM_LETEMPAY_CONFIG_PAYPAL_API_SIGNTURE_LABEL"
+        />
+
+    </fieldset>
+
+    <fieldset name="paypal_live">
+        <field name="Live_API_UserName"
+               type="text"
+               label="COM_LETEMPAY_CONFIG_PAYPAL_API_USERNAME_LABEL"
+        />
+
+        <field name="Live_API_Password"
+               type="text"
+               label="COM_LETEMPAY_CONFIG_PAYPAL_API_PASSWORD_LABEL"
+        />
+
+        <field name="Live_API_Signature"
+               type="text"
+               label="COM_LETEMPAY_CONFIG_PAYPAL_API_SIGNTURE_LABEL"
+        />
+
+        <field name="Live_API_Endpoint"
+               type="text"
+               default="https://api-3t.paypal.com/nvp"
+               label="COM_LETEMPAY_CONFIG_PAYPAL_API_ENDPOINT_ULR_LABEL"
+        />
+
+    </fieldset>
+</config>

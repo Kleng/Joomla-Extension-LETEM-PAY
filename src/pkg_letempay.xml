@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="package" version="3.1">
+
+    <name>Let'em pay Package</name>
+    <author>Peter Vavro</author>
+    <creationDate>March 2013</creationDate>
+    <packagename>letempay</packagename>
+    <version>1.0.1</version>
+    <url>http://joomla.vavro.me/</url>
+    <license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+    <packager>Peter Vavro</packager>
+    <packagerurl>http://joomla.vavro.me/list-of-items</packagerurl>
+    <description>Package to combine multiple extensions</description>
+
+    <files folder="packages">
+        <file type="component" id="letempay" >com_letempay.zip</file>
+        <file type="module" id="letempay" client="site">mod_letempay.zip</file>
+    </files>
+
+</extension>

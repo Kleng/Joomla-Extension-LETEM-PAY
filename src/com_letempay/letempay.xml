@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.1" method="upgrade">
+ 
+    <name>COM_LETEMPAY</name>
+    <creationDate>March 2013</creationDate>
+    <author>Peter Vavro</author>
+    <authorEmail>peter@vavro.me</authorEmail>
+    <authorUrl>http://www.vavro.me</authorUrl>
+    <copyright>Copyright (C) 2013 Peter Vavro. All rights reserved.</copyright>
+    <license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+    <version>1.0.1</version>
+    <description>COM_LETEMPAY_DESCRIPTION</description>
+ 
+    <scriptfile>script.letempay.php</scriptfile>
+ 
+    <install>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+
+    <uninstall>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+
+    <files folder="site">
+        <filename>index.html</filename>
+        <filename>letempay.php</filename>
+        <filename>controller.php</filename>
+        <folder>controllers</folder>
+        <folder>helpers</folder>
+        <folder>models</folder>
+        <folder>views</folder>
+    </files> 
+
+    <media destination="com_letempay" folder="media">
+        <filename>index.html</filename>
+        <folder>css</folder>
+        <folder>images</folder>
+    </media>
+
+    <administration>
+
+        <menu>COM_LETEMPAY_MENU</menu>
+
+        <files folder="admin">
+            <filename>index.html</filename>
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+            <filename>letempay.php</filename>
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <folder>controllers</folder>
+            <folder>helpers</folder>
+            <folder>models</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+            <folder>sql</folder>
+        </files>
+ 
+        <languages folder="admin">
+            <language tag="en-GB">language/en-GB/en-GB.com_letempay.ini</language>
+            <language tag="en-GB">language/en-GB/en-GB.com_letempay.sys.ini</language>
+        </languages>
+    </administration>
+ 
+</extension>
